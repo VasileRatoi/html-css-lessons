@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    body{
+      margin: 0;
+      background-color: gray;
+    }
+    ul{
+      transform: translateX(-200px);
+      border-right: 50px solid yellow;
+      width: 200px;
+      list-style: none;
+      margin: 0;
+      background-color: #C1C1C1;
+      padding: 0;
+    }
+    a{
+      text-decoration: none;
+      color: #F51CF5;
+    }
+    li{
+      padding: 20px;
+      border-bottom: 20px solid red;
+      border-right: 20px solid red;
+    }
+    li:hover{
+      background-color: #696868;
+    }
+    .new{
+      border-bottom: none;
+    }
+    ul:hover{
+      transform: translateX(0);
+      transition: 1s;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li>
+      <a href="">Facebook</a>
+    </li>
+    <li>
+      <a href="">VKontakte</a>
+    </li>
+    <li>
+      <a href="">GitHub</a>
+    </li>
+    <li>
+      <a href="">Google</a>
+    </li>
+    <li class="new">
+      <a href="">Youtube</a>
+    </li>
+  </ul>
+</body>
+</html>
