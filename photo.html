@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Photo</title>
+  <style>
+    body{
+      margin-top: 100px;
+      background-color: #AAAAAA;
+    }
+    img{
+      border: 15px solid white;
+      width: 250px;
+      box-shadow: 0 0 7px 2px white;
+    }
+    img:hover{
+      border-color:red;
+      transition: 1s;
+      transform: scale(2) rotate(3600deg) !important;
+    }
+    p{
+      text-align: center;
+      height: 50px;
+      margin: 0;
+    }
+    #cat3{
+      transform: rotate(90deg) scale(1.5) translateX(50px);
+
+    }
+    #cat1{
+      transform: rotate(-25deg);
+    }
+    #cat2{
+      transform: rotate(25deg);
+    }
+    #cat4{
+      transform: rotate(-25deg);
+    }
+    #cat5{
+      transform: rotate(25deg);
+    }
+  </style>
+</head>
+<body>
+    <p>
+      <img src="album/cat1.jpg" alt="" id="cat1">
+      <img src="album/cat2.jpg" alt="" id="cat2">
+    </p>
+    <p>
+      <img src="album/cat3.jpg" alt="" id="cat3">
+    </p>
+    <p>
+      <img src="album/cat4.jpg" alt="" id="cat4">
+      <img src="album/cat5.jpg" alt="" id="cat5">
+    </p>
+</body>
+</html>
