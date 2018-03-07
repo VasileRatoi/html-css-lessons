@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Psevda selector</title>
+  <style>
+    body{
+      background-color: #222;
+    }
+    form{
+      padding: 25px;
+      background-color: #FF851D;
+    }
+    .new1{
+      padding: 10px;
+    }
+    input{
+      border-radius: 15px 0px 0px 15px;
+      width: 150px;
+      transition: 1s;
+      outline: none;
+      border: 3px solid grey;
+    }
+    button{
+      border-radius: 0px 15px 15px 0px;
+      outline: none;
+      background-color: #2FCC41;
+      border: 3px solid grey;;
+    }
+    button:hover{
+      background-color: #02FF71;
+    }
+    input:focus{
+      width: 300px;
+    }
+
+    button::before{
+      content: "[";
+      color: red;
+    }
+    button::after{
+      content: "]";
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <form action="">
+    <input type="text" class="new1">
+    <button class="new1">GO</button>
+  </form>
+</body>
+</html>
