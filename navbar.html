@@ -7,22 +7,30 @@
     body{
     margin: 0;
     }
+    a:hover{
+      color: black;
+    }
     a{
       text-decoration: none;
       color: white;
     }
     nav{
+      padding: 0;
+      margin: 0;
       background-color: #4CAF50;
       height: 60px;
     }
     li{
       list-style: none;
       float: left;
-      padding: 20px;
+      padding: 0;
+      margin: 0;
     }
     ul{
+      height: 60px;
       margin: 0;
       padding: 0;
+
     }
     ul:first-child{
       float: left;
@@ -30,18 +38,45 @@
     ul:last-child{
       float: right;
     }
+  ul:first-child  button{
+      font-family: tahoma;
+      padding: 0;
+      margin: 0;
+      width: 115px;
+      height: 60px;
+      background-color: #4CAF50;
+      border: 0;
+      color: white;
+      font-size: 15px;
+      text-transform: uppercase;
+    }
+    ul:last-child  button{        
+        padding: 0;
+        margin: 0;
+        width: 50px;
+        height: 60px;
+        background-color: #4CAF50;
+        border: 0;
+        color: white;
+        font-size: 15px;
+        text-transform: uppercase;
+      }
+    ul button:hover{
+      color: black;
+      background-color: white;
+    }
   </style>
 </head>
 <body>
   <nav>
     <ul>
-      <li><a href="#">Tutorials</a></li>
-      <li><a href="#">Referance</a></li>
-      <li><a href="#">Examples</a></li>
+      <li><button>Tutorials&#9660;</button></li>
+      <li><button>Referance&#9660;</button></li>
+      <li><button>Examples&#9660;</button></li>
     </ul>
     <ul>
-      <li><a href="#">&#127760;</a></li>
-      <li><a href="#">&#128269;</a></li>
+      <li><button>&#127760;</button></li>
+      <li><button>&#128269;</button></li>
     </ul>
   </nav>
 </body>
