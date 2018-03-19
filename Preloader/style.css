@@ -1,0 +1,65 @@
+body{
+  background-color: grey;
+}
+
+#preloader{
+  /*background-color: #fff;*/
+  width: 200px;
+  height: 200px;
+}
+#preloader .big{
+  border: 5px solid #3BB473;
+  width: 160px;
+  height: 160px;
+  transform: translateX(15px) translateY(15px);
+  border-left-color: grey;
+  border-right-color: grey;
+  border-radius: 100%;
+  animation: circ 1s infinite linear;
+}
+#preloader .small{
+  border: 5px solid #01FD37;
+  width: 90px;
+  height: 90px;
+  transform: translateX(15px) translateY(15px);
+  border-radius: 100%;
+  border-left-color: grey;
+  border-right-color: grey;
+  animation: circ3 3s infinite linear;
+
+}
+#preloader .medium{
+  border: 5px solid #28CF3F;
+  width: 130px;
+  height: 130px;
+  transform: translateX(10px) translateY(10px);
+  border-radius: 100%;
+  border-top-color: grey;
+  border-bottom-color: grey;
+  animation: circ2 2s infinite linear;
+}
+
+@keyframes circ{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+@keyframes circ2{
+  from{
+    transform: translateX(10px) translateY(10px) rotate(0deg);
+  }
+  to{
+    transform: translateX(10px) translateY(10px) rotate(-1440deg);
+  }
+}
+@keyframes circ3{
+  from{
+    transform: translateX(15px) translateY(15px) rotate(0deg);
+  }
+  to{
+    transform: translateX(15px) translateY(15px) rotate(2160deg);
+  }
+}
