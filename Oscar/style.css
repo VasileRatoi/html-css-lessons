@@ -2,6 +2,9 @@ body{
   background-color: grey;
   font-family: arial;
 }
+#oscar{
+  overflow: hidden;
+}
 #oscar, #oscar div, #oscar figcaption{
   width: 480px;
   height: 360px;
@@ -36,4 +39,11 @@ body{
 }
 #oscar:hover p{
   transform: translateX(30px) translateY(-25px) scale(1);
+}
+#oscar img{
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+#oscar:hover img{
+  transform: scale(1);
 }
