@@ -1,0 +1,39 @@
+body{
+  background-color: grey;
+  font-family: arial;
+}
+#oscar, #oscar div, #oscar figcaption{
+  width: 480px;
+  height: 360px;
+}
+#oscar figcaption{
+  transform: translateY(-360px);
+}
+#oscar h2{
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+  transform: translateY(165px);
+  transition: 0.5s;
+}
+#oscar h2 span{
+  font-weight: 100;
+}
+#oscar:hover figcaption{
+  background: linear-gradient(rgba(50, 50, 100, 0.75) , rgba(50, 100, 50, 0.75) , rgba(100, 50, 50, 0.75));
+}
+#oscar:hover h2{
+  transform: translateY(135px);
+}
+#oscar figcaption p{
+  border: 2px solid #fff;
+  color: #fff;
+  width: 420px;
+  height: 300px;
+  transition: 0.5s;
+  transform: translateX(30px) translateY(-25px) scale(0);
+}
+#oscar:hover p{
+  transform: translateX(30px) translateY(-25px) scale(1);
+}
