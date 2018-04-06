@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+  <style>
+    body{
+      background-color: #3EAD5B;
+      margin: 0;
+    }
+    nav{
+      background-color: blue;
+    }
+    nav ul{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      width: 45%;
+    }
+    nav ul:first-child{
+      margin-left: 5%;
+    }
+    nav ul:last-child{
+      text-align: right;
+    }
+    nav ul, nav ul li{
+      display: inline-block;
+      vertical-align: middle;
+    }
+    nav ul li{
+      padding: 10px;
+    }
+    nav ul li a{
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    nav ul li i.fa.fa-globe{
+      font-size: 30px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#">Tutorials <i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+      <li><a href="#">References <i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+      <li><a href="#">Examples <i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+    </ul>
+    <ul>
+      <li><a href="#"><i class="fa fa-globe" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+    </ul>
+  </nav>
+</body>
+</html>
