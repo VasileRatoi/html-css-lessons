@@ -1,0 +1,121 @@
+body{
+  background-color: grey;
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+header ul, header ul li, header p{
+  display: inline-block;
+  vertical-align: middle;
+}
+header ul li{
+  padding-left: 15px;
+}
+header ul:first-child li:first-child{
+  padding-left: 220px;
+}
+header ul:last-child li:first-child{
+  padding-left: 90px;
+}
+header{
+  background-color: #EFEFEF;
+  color: #777777;
+  font-size: 17px;
+  font-family: tahoma;
+}
+header p{
+  text-align: right;
+}
+header ul, header p{
+  width: 33%;
+}
+header ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+/*Middle*/
+#middle{
+  background-color: #fff;
+  padding-left: 220px;
+  height: 60px;
+}
+#middle form{
+  width: 600px;
+  padding-left: 50px;
+}
+#middle form input{
+  width: 600px;
+  height: 35px;
+  border-radius: 100px;
+  border: 1px solid #646464;
+  outline: none;
+}
+#middle figure{
+  margin: 0;
+  padding: 0;
+}
+ #middle ul{
+   list-style: none;
+   text-align: right;
+   font-size: 30px;
+   padding-left: 100px;
+   margin: 0;
+ }
+  #middle ul li{
+    text-align: center;
+    width: 80px;
+    height: 60px;
+  }
+  #middle ul li:hover{
+    background-color: #EFEFEF;
+  }
+  #middle ul li a{
+    padding-top: 10px;
+    color: #777777;
+  }
+ #middle figure, #middle form, #middle ul, #middle ul li, #middle ul li a{
+    display: inline-block;
+    vertical-align: middle;
+  }
+#middle form a .fa-search{
+  position: absolute;
+}
+#middle form input[type=text]{
+  padding-left: 20px;
+}
+#middle form input[placeholder="Caută produsul dorit"]:active{
+  color: #fff;
+}
+/*NAV*/
+nav{
+  margin: 0;
+  padding: 0;
+  background-color: #333333;
+  height: 50px;
+  color: #fff;
+  font-family: tahoma;
+  font-size: 18px;
+}
+nav ul{
+  margin: 0;
+  list-style: none;
+  padding-left: 200px;
+}
+nav ul, nav ul li{
+  display: inline-block;
+  vertical-align: middle;
+}
+nav ul li{
+  padding-top: 10px;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+}
+nav ul li:hover{
+  background-color: #414141;
+  cursor: pointer;
+}
