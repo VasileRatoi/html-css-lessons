@@ -1,0 +1,59 @@
+body{
+  background-color: black;
+}
+nav{
+  position: relative;
+  top: 300px;
+  left: 300px;
+}
+nav ul li i{
+  color: #fff;
+}
+nav ul li{
+  width: 300px;
+  height: 300px;
+  background-color: blue;
+  position: absolute;
+  transform-origin: 0 0;
+  border: 1px solid #fff;
+  overflow: hidden;
+}
+nav ul li a{
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  background-color: pink;
+  display: block;
+  position: absolute;
+  top: -150px;
+  left: -150px;
+  transform: skew(-45deg);
+  transition: 0.5s;
+}
+nav ul li:nth-child(1){
+  transform: rotate(0deg) skew(45deg) ;
+}
+nav ul li:nth-child(2){
+  transform: rotate(45deg) skew(45deg);
+}
+nav ul li:nth-child(3){
+  transform: rotate(90deg) skew(45deg);
+}
+nav ul li:nth-child(4){
+  transform: rotate(135deg) skew(45deg);
+}
+nav ul li:nth-child(5){
+  transform: rotate(180deg) skew(45deg);
+}
+nav ul li:nth-child(6){
+  transform: rotate(225deg) skew(45deg);
+}
+nav ul li:nth-child(7){
+  transform: rotate(270deg) skew(45deg);
+}
+nav ul li:nth-child(8){
+  transform: rotate(315deg) skew(45deg);
+}
+nav ul li a:hover{
+  background-color: green;
+}
