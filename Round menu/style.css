@@ -6,8 +6,19 @@ nav{
   top: 300px;
   left: 300px;
 }
+nav ul{
+  background-color: red;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  position: absolute;
+  border-radius: 100%;
+}
 nav ul li i{
   color: #fff;
+  position: absolute;
+  top: 195px;
+  left: 265px;
 }
 nav ul li{
   width: 300px;
@@ -15,20 +26,22 @@ nav ul li{
   background-color: blue;
   position: absolute;
   transform-origin: 0 0;
-  border: 1px solid #fff;
+  border: 1px solid #00FF76;
   overflow: hidden;
+  top: 150px;
+  left: 150px;
 }
 nav ul li a{
   width: 300px;
   height: 300px;
   border-radius: 100%;
-  background-color: pink;
   display: block;
   position: absolute;
   top: -150px;
   left: -150px;
   transform: skew(-45deg);
   transition: 0.5s;
+  background-image: radial-gradient(black,white 90%,black 95%);
 }
 nav ul li:nth-child(1){
   transform: rotate(0deg) skew(45deg) ;
@@ -54,6 +67,48 @@ nav ul li:nth-child(7){
 nav ul li:nth-child(8){
   transform: rotate(315deg) skew(45deg);
 }
+nav ul li:nth-child(3) i{
+  transform: rotate(-90deg);
+}
+nav ul li:nth-child(4) i{
+  transform: rotate(-135deg);
+}
+nav ul li:nth-child(5) i{
+  transform: rotate(-180deg);
+}
+nav ul li:nth-child(6) i{
+  transform: rotate(-225deg);
+}
+nav ul li:nth-child(7) i{
+  transform: rotate(-270deg);
+}
+nav ul li:nth-child(8) i{
+  transform: rotate(-315deg);
+}
 nav ul li a:hover{
-  background-color: green;
+  background-image: radial-gradient(red,yellow);;
+}
+nav ul::after{
+  width: 160px;
+  height: 160px;
+  background-color: #fff;
+  border-radius: 100%;
+  content: "\f2dd";
+  position: absolute;
+  top: 70px;
+  left: 70px;
+  text-align: center;
+  line-height: 160px;
+  font-family: FontAwesome;
+  font-size: 50px;
+  color: pink;
+  box-shadow: 0 0 50px 3px red;
+  text-shadow: 0 5px 10px red;
+}
+nav li:nth-child(7):hover~:last-child{
+  color: yellow;
+}
+nav ul:target::after{
+  color: red;
+  content: "\f294";
 }
