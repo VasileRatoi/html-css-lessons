@@ -1,0 +1,36 @@
+/* Global styles - all in */
+
+body{
+  background-color: grey;
+}
+#profile{
+  border: 1px solid #fff;
+  width: 90%;
+  margin: 0 5%;
+}
+
+/* Desktop styles */
+
+#profile figure, #profile footer{
+  display: inline-block;
+  vertical-align: middle;
+}
+#profile figure{
+  width: 40%;
+  margin: 0;
+  background-color: yellow;
+}
+#profile footer{
+  width: 60%;
+  background-color: red;
+}
+#profile figure img{
+  width: 100%;
+}
+/* Mobile styles */
+@media screen and (max-width:600px){
+  #profile figure, #profile footer{
+    display: block;
+    width: 100%;
+  }
+}
