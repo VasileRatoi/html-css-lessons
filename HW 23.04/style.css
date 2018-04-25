@@ -1,0 +1,243 @@
+/*Global styles*/
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #03467D;
+  text-align: center;
+  margin-top: 100px;
+}
+nav{
+  position: relative;
+  width: 100%;
+}
+nav ul{
+  width: 96%;
+  /* height: 70px; */
+  position: relative;
+  /* overflow: hidden; */
+}
+nav ul, nav ul li{
+  display: inline-block;
+}
+nav li{
+  background-color: #00BCD0;
+  padding: 10px;
+  width: 110px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+nav li a{
+  text-decoration: none;
+  color: #fff;
+}
+nav li:hover{
+  cursor: pointer;
+  background-color: #00FFFF;
+}
+nav li:hover a{
+  text-decoration: underline;
+}
+nav li:first-child{
+  position: relative;
+}
+nav li:nth-child(2){
+  position: relative;
+}
+nav li:nth-child(3){
+  position: relative;
+}
+nav li:nth-child(4){
+  position: relative;
+}
+nav li:nth-child(5){
+  position: relative;
+}
+nav li:nth-child(6){
+  position: relative;
+}
+nav li:nth-child(7){
+  position: relative;
+}
+nav li:nth-child(8){
+  position: relative;
+}
+nav li:nth-child(9){
+  position: relative;
+}
+nav li:nth-child(10){
+  position: relative;
+}
+nav li:nth-child(11){
+  position: relative;
+  transition: .5s;
+}
+nav li:nth-child(12){
+  position: absolute;
+}
+nav li:nth-child(13){
+  position: relative;
+  z-index: -1;
+  transition: .5s;
+}
+nav li:nth-child(12):hover ~ li:nth-child(13){
+  transform: translateY(75px);
+}
+li:nth-child(13):hover{
+  transform: translateY(75px);
+}
+nav li:nth-child(12)::before{
+    content: "1";
+    width: 20px;
+    height: 20px;
+    background-color: #00BCD0;
+    border-radius: 100%;
+    position: absolute;
+    text-align: center;
+    line-height: 20px;
+    border: 2px solid #fff;
+    color: #fff;
+    left: -10px;
+    top: 25px;
+}
+/*Media styles*/
+@media screen and (max-width:1670px){
+  nav li:nth-child(12){
+    position: absolute;
+    z-index: 1;
+  }
+  nav li:nth-child(11){
+    position: absolute;
+  }
+  nav li:nth-child(12):hover ~ li:nth-child(13){
+    transform: translateY(150px);
+  }
+  li:nth-child(13):hover{
+    transform: translateY(150px);
+  }
+  nav li:nth-child(12)::before{
+    content: "2";
+  }
+}
+@media screen and (max-width:1531px){
+  nav li:nth-child(12){
+
+  }
+  nav li:nth-child(10){
+    position: absolute;
+    z-index: -1;
+  }
+  nav li:nth-child(12)::before{
+      content: "3";
+  }
+}
+@media screen and (max-width:1391px){
+  nav li:nth-child(12){
+
+  }
+  nav li:nth-child(9){
+    position: absolute;
+    z-index: -1;
+  }
+  nav li:nth-child(12)::before{
+      content: "4";
+  }
+}
+@media screen and (max-width:1252px){
+  nav li:nth-child(12){
+
+  }
+  nav li:nth-child(8){
+    position: absolute;
+    z-index: -1;
+  }
+  nav li:nth-child(12)::before{
+      content: "5";
+  }
+}
+@media screen and (max-width:1112px){
+  nav li:nth-child(12){
+
+  }
+  nav li:nth-child(7){
+    position: absolute;
+    z-index: -1;
+  }
+  nav li:nth-child(12)::before{
+      content: "6";
+  }
+}
+@media screen and (max-width:972px){
+  nav li:nth-child(12){
+
+  }
+  nav li:nth-child(6){
+    position: absolute;
+    z-index: -1;
+  }
+  nav li:nth-child(12)::before{
+      content: "7";
+  }
+}
+@media screen and (max-width:833px){
+  nav li:nth-child(12){
+
+  }
+  nav li:nth-child(5){
+    position: absolute;
+    z-index: -1;
+  }
+  nav li:nth-child(12)::before{
+      content: "8";
+  }
+}
+@media screen and (max-width:693px){
+  nav li:nth-child(12){
+
+  }
+  nav li:nth-child(4){
+    position: absolute;
+    z-index: -1;
+  }
+  nav li:nth-child(12)::before{
+      content: "9";
+  }
+}
+@media screen and (max-width:554px){
+  nav li:nth-child(12){
+
+  }
+  nav li:nth-child(3){
+    position: absolute;
+    z-index: -1;
+  }
+  nav li:nth-child(12)::before{
+      content: "10";
+  }
+}
+@media screen and (max-width:414px){
+  nav li:nth-child(12){
+
+  }
+  nav li:nth-child(2){
+    position: absolute;
+    z-index: -1;
+  }
+  nav li:nth-child(12)::before{
+      content: "11";
+  }
+}
+@media screen and (max-width:274px){
+  nav li:nth-child(12){
+
+  }
+  nav li:first-child{
+    position: absolute;
+    z-index: -1;
+  }
+  nav li:nth-child(12)::before{
+      content: "12";
+  }
+}
