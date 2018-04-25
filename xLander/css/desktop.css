@@ -1,0 +1,26 @@
+nav{
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+nav div{
+  display: inline-block;
+  vertical-align: middle;
+}
+nav div:first-child{
+  width: 30%;
+}
+nav div:last-child{
+  width: 70%;
+  text-align: right;
+  text-transform: uppercase;
+}
+nav div:last-child a{
+  margin-left: 2.5%;
+}
+.container{
+  margin-left: 8%;
+  margin-right: 8%;
+}
+nav div:last-child a:first-child{
+  display: none;
+}
