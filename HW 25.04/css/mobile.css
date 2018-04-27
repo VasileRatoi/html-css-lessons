@@ -1,0 +1,60 @@
+body{
+  margin-right: 2%;
+  margin-left: 2%;
+}
+header div{
+  display: inline-block;
+  vertical-align: middle;
+}
+header div:first-child a:nth-child(2) img, header div:nth-child(2) ul, header div:last-child select, header div:last-child button{
+  display: none;
+}
+header div:first-child a:first-child{
+  font-size: 45px;
+  color: #f19190;
+  margin-left: 15px;
+}
+header div:first-child{
+  width: 80%;
+}
+header div:last-child{
+  width: 20%;
+}
+header div:first-child img:last-child{
+  width: 140px;
+  height: 40px;
+}
+header div:last-child{
+  text-align: right;
+}
+header div:last-child a{
+  font-size: 45px;
+  color: #bcbcbc;
+  margin-right: 15px;
+}
+@media screen and (max-width: 256px){
+  header div:first-child a:first-child{
+    font-size: 30px;
+  }
+  header div:first-child img:last-child{
+    width: 120px;
+    height: 35px;
+    padding-top: 10px;
+  }
+  header div:last-child a{
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 213px){
+  header div:first-child a:first-child{
+    font-size: 20px;
+  }
+  header div:first-child img:last-child{
+    width: 100px;
+    height: 30px;
+    padding-top: 10px;
+  }
+  header div:last-child a{
+    font-size: 20px;
+  }
+}

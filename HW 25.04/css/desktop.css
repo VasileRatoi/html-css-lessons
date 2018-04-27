@@ -1,0 +1,157 @@
+body{
+  margin-top: 1%;
+  margin-right: 10%;
+  margin-bottom: 1%;
+  margin-left: 10%;
+}
+a{
+  color: #9BA1A7;
+  text-decoration: none;
+}
+header{
+  padding-top: 1%;
+  padding-bottom: 1%;
+  width: 100%;
+}
+header div{
+  display: inline-block;
+  vertical-align: middle;
+  width: 32%;
+}
+header div:first-child a:first-child, header div:last-child a, header div:first-child a:last-child img{
+  display: none;
+}
+header div:nth-child(2) ul, header div:nth-child(2) ul li{
+  display: inline-block;
+}
+header div:nth-child(2) ul li{
+  font-size: 22px;
+  padding: 10px;
+}
+header div:last-child{
+  text-align: right;
+}
+header div:nth-child(2) ul li:first-child{
+  text-align: center;
+  width: 80px;
+  border-bottom: 2px solid red;
+}
+header div:nth-child(2) ul li:first-child a{
+  color: red;
+  padding-bottom: 10px;
+}
+header div:nth-child(2) ul li:first-child a:hover{
+  cursor: default;
+}
+header div:nth-child(2) ul li a:hover{
+  cursor: pointer;
+  color: red;
+}
+header div:last-child select{
+  width: 70px;
+  height: 60px;
+  outline: none;
+  border: 1px solid #d6d6d6;
+  border-radius: 5px;
+  font-size: 20px;
+}
+header div:last-child select:hover{
+  border: 1px solid #adabab;
+  cursor: pointer;
+}
+header div:last-child select+button, header div:last-child select+button+button{
+  padding: 10px;
+  height: 55px;
+  font-size: 16px;
+  outline: none;
+  background-color: #61A5A9;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+header div:last-child select+button+button{
+  background-color: #e08d8d;
+}
+header div:last-child select+button:hover{
+  background-color: #4e8689;
+}
+header div:last-child select+button+button:hover{
+  background-color: #dda4a4;
+}
+@media screen and (max-width: 1566px){
+  header div:first-child img:first-child{
+    width: 300px;
+    height: 60px;
+  }
+  header div:nth-child(2) ul li{
+    font-size: 18px;
+    padding: 8px;
+  }
+  header div:last-child select{
+    width: 60px;
+    height: 50px;
+    font-size: 15px;
+  }
+  header div:last-child select+button, header div:last-child select+button+button{
+    height: 45px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1368px){
+  header div:first-child img:first-child{
+    width: 280px;
+    height: 55px;
+  }
+  header div:nth-child(2) ul li{
+    font-size: 15px;
+    padding: 6px;
+  }
+  header div:last-child select{
+    width: 50px;
+    height: 40px;
+    font-size: 12px;
+  }
+  header div:last-child select+button, header div:last-child select+button+button{
+    height: 40px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1205px){
+  header div:first-child img:first-child{
+    width: 260px;
+    height: 50px;
+  }
+  header div:nth-child(2) ul li{
+    font-size: 13px;
+    padding: 5px;
+  }
+  header div:last-child select{
+    width: 45px;
+    height: 35px;
+    font-size: 12px;
+  }
+  header div:last-child select+button, header div:last-child select+button+button{
+    height: 35px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1106px){
+  header div:first-child img:first-child{
+    width: 240px;
+    height: 45px;
+  }
+  header div:nth-child(2) ul li{
+    font-size: 12px;
+    padding: 2px;
+  }
+  header div:last-child select{
+    width: 40px;
+    height: 30px;
+    font-size: 11px;
+  }
+  header div:last-child select+button, header div:last-child select+button+button{
+    height: 30px;
+    font-size: 12px;
+  }
+}
