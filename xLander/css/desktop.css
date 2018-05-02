@@ -42,3 +42,30 @@ header::after{
 nav div:last-child a:first-child{
   display: none;
 }
+
+@media screen and (max-width: 1428px){
+  header .middle_form{
+    margin: 5% 10%;
+  }
+  header .middle_form article h1{
+    font-size: 80px;
+    line-height: 80px;
+  }
+  header .middle_form article h3{
+    font-size: 35px;
+  }
+  header .middle_form article p{
+    font-size: 20px;
+  }
+  header .middle_form form input{
+    width: 200px;
+  }
+  header .middle_form form p{
+
+  }
+}
+@media screen and (max-width: 1170px){
+  header .middle_form{
+    margin: 5% 5%;
+  }
+}

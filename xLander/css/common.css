@@ -28,14 +28,25 @@ nav div:last-child a:hover{
   color: yellow;
 }
 header .middle_form{
+  width: 70%;
   display: table;
   color: #fff;
   margin: 5% 15%;
-  padding-top: 50px;
-
+  padding-top: 2%;
 }
 header .middle_form article, header .middle_form form{
   display: table-cell;
+}
+header .middle_form article{
+  width: 70%;
+}
+header .middle_form form{
+  background: #594944;
+  background-color: rgba(58, 51, 48, 0.80);
+  border-radius: 10px;
+  text-align: center;
+  width: 30%;
+  height: 380px;
 }
 
 header .middle_form article h1, header .middle_form article h3, header .middle_form article p{
@@ -43,17 +54,17 @@ header .middle_form article h1, header .middle_form article h3, header .middle_f
   padding: 0;
 }
 header .middle_form article h1{
-  font-size: 80px;
+  font-size: 90px;
   line-height: 90px;
 }
 header .middle_form article h3{
-  font-size: 36px;
+  font-size: 40px;
 }
 header .middle_form article p{
-  font-size: 20px;
+  font-size: 25px;
   width: 640px;
   font-weight: 100;
-  word-spacing: 3px;
+  word-spacing: 1px;
   margin-bottom: 30px;
 }
 header .middle_form article a, header form button{
@@ -70,21 +81,13 @@ header .middle_form article a:hover, header form button:hover{
   color: #fff;
   background-color: #e5c527;
 }
-header .middle_form form{
-  background: #594944;
-  background-color: rgba(58, 51, 48, 0.80);
-  border-radius: 10px;
-  text-align: center;
-  width: 400px;
-  height: 380px;
-}
+
 header .middle_form form h3{
   font-size: 22px;
-
 }
 header .middle_form form input{
   display: table-cell;
-  width: 320px;
+  width: 300px;
   height: 35px;
   margin-bottom: 15px;
   padding-left: 10px;
@@ -99,8 +102,8 @@ header .middle_form form input::placeholder{
   font-size: 15px;
 }
 header .middle_form form p{
-  width: 320px;
-  margin-left: 35px;
+  width: 80%;
+  padding-left: 10%;
 }
 header .middle_form form button{
   display: table-cell;
