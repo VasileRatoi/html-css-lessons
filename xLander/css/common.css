@@ -87,10 +87,16 @@ header .middle_form form input{
   width: 320px;
   height: 35px;
   margin-bottom: 15px;
+  padding-left: 10px;
+  outline: none;
+  transition: .5s;
+  border: 0;
+}
+header .middle_form form input:focus{
+  box-shadow: inset 1px 1px 1px 1px #f7d427;
 }
 header .middle_form form input::placeholder{
   font-size: 15px;
-  padding-left: 10px;
 }
 header .middle_form form p{
   width: 320px;
