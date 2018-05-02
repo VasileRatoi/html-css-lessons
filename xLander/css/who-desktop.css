@@ -1,0 +1,43 @@
+#who{
+  background-color: pink;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+#who h1, #who h3{
+  text-align: center;
+  position: relative;
+}
+#who h1{
+  top: 35px;
+  /*border-bottom: 2px solid yellow;*/
+}
+#who h1:after{
+  content: "";
+  border-bottom: 2px solid yellow;
+  width: 300px;
+  display: block;
+  position: absolute;
+  left: calc(50% - 150px);
+}
+#who h3{
+  bottom: 35px;
+}
+.col-left{
+  width: 60%;
+}
+.col-right{
+  width: 40%;
+}
+.col-left, .col-right{
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+}
+.tab{
+  border: 2px dotted yellow;
+  display: none;
+}
+.selected{
+  display: block;
+}
