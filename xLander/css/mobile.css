@@ -19,28 +19,6 @@ nav div:last-child a{
 nav div:last-child a:first-child{
   display: inline;
 }
-nav{
-  padding: 15px 1%;
-}
-nav div{
-  display: inline-block;
-  vertical-align: middle;
-}
-nav div:first-child{
-  width: 30%;
-}
-nav div:last-child{
-  width: 70%;
-  text-align: right;
-  text-transform: uppercase;
-}
-nav div:last-child a{
-  margin-left: 2.5%;
-}
-.container{
-  margin-left: 8%;
-  margin-right: 8%;
-}
 header iframe{
   position: absolute;
   top: 0;
@@ -60,113 +38,132 @@ header::after{
   background-image: url(../img/grid.png);
   z-index: -1;
 }
-nav div:last-child a:first-child{
-  display: none;
-}
-header .middle_form{
+#artForm{
   width: 70%;
-  display: table;
-  color: #fff;
-  margin: 5% 15%;
-  padding-top: 2%;
+  margin: 10% 15%;
+  padding: 0;
+  color: #ffffff;
+  text-align: center;
 }
-header .middle_form article, header .middle_form form{
-  /*display: table-cell;*/
+#artForm article{
+  width: 80%;
+  margin-left: 10%;
 }
-header .middle_form article{
-  width: 100%;
-}
-header .middle_form form{
+#artForm form{
+  width: 60%;
+  margin-left: 20%;
+  text-align: center;
   background: #594944;
   background-color: rgba(58, 51, 48, 0.80);
-  border-radius: 10px;
-  text-align: center;
-  width: 30%;
-  height: 380px;
+  border-radius: 5px;
 }
-
-header .middle_form article h1, header .middle_form article h3, header .middle_form article p{
+#artForm article, #artForm form{
+  display: block;
+}
+#artForm article h1{
+  font-size: 75px;
+  line-height: 85px;
   margin: 0;
-  padding: 0;
 }
-header .middle_form article h1{
-  font-size: 90px;
-  line-height: 90px;
+#artForm article h3{
+  font-size: 32px;
+  margin: 0;
 }
-header .middle_form article h3{
-  font-size: 40px;
+#artForm article p{
+  font-size: 16.5px;
+  line-height: 28px;
+  font-weight: 200;
+  width: 100%;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  margin-bottom: 10px;
 }
-header .middle_form article p{
-  font-size: 25px;
-  width: 640px;
-  font-weight: 100;
-  word-spacing: 1px;
-  margin-bottom: 30px;
-}
-header .middle_form article a, header form button{
+#artForm article a, form button{
   background-color: #f7d427;
   border-radius: 5px;
-  padding: 10px;
-  outline: none;
+  padding: 10px 10px;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   border: 0;
-  color: black;
+  color: #333;
+  font-size: 14px;
+  font-weight: 700;
+  width: 40%;
   transition: .5s;
+  margin: 10% auto;
 }
-header .middle_form article a:hover, header form button:hover{
-  cursor: pointer;
+#artForm article a{
+  margin: 2% 0.5%;
+}
+#artForm article a:hover, form button:hover{
+  background-color: #d9a701;
   color: #fff;
-  background-color: #e5c527;
+  cursor: pointer;
 }
-
-header .middle_form form h3{
-  font-size: 22px;
+#artForm form h3{
+  font-size: 20px;
+  padding-top: 10px;
 }
-header .middle_form form input{
-  display: table-cell;
-  width: 300px;
+#artForm form input{
+  width: 90%;
   height: 35px;
+  margin-left: 3.5%;
+  display: block;
+  outline: none;
+  transition: .5s;
+  border: 0;
   margin-bottom: 15px;
   padding-left: 10px;
-  outline: none;
-  transition: .5s;
-  border: 0;
 }
-header .middle_form form input:focus{
+#artForm form input:focus{
   box-shadow: inset 1px 1px 1px 1px #f7d427;
 }
-header .middle_form form input::placeholder{
+#artForm form input::placeholder{
   font-size: 15px;
 }
-header .middle_form form p{
-  width: 80%;
-  padding-left: 10%;
+#artForm form p{
+  width: 90%;
+  margin-left: 5%;
+  font-size: 14px;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
-header .middle_form form button{
-  display: table-cell;
+@media screen and (max-width: 1023px){
+  #artForm{
+    width: 80%;
+    margin: 10% 10%;
 }
-@media screen and (max-width: 1428px){
-  header .middle_form{
-    margin: 5% 10%;
+@media screen and (max-width: 898px){
+  #artForm{
+    width: 90%;
+    margin: 10% 5%;
+}
+@media screen and (max-width: 800px){
+  #artForm{
+    width: 100%;
+    margin: 10% 0;
+}
+@media screen and (max-width: 721px){
+  #artForm article{
+    width: 90%;
+    margin-left: 5%;
   }
-  header .middle_form article h1{
-    font-size: 80px;
-    line-height: 80px;
-  }
-  header .middle_form article h3{
-    font-size: 35px;
-  }
-  header .middle_form article p{
-    font-size: 20px;
-  }
-  header .middle_form form input{
-    width: 200px;
+  #artForm form{
+    width: 70%;
+    margin-left: 15%;
   }
 }
-@media screen and (max-width: 1278px){
-
+@media screen and (max-width: 643px){
+  #artForm article{
+    width: 100%;
+    margin-left: 0;
+  }
+  #artForm form{
+    width: 70%;
+    margin-left: 15%;
+  }
 }
-@media screen and (max-width: 1170px){
-header .middle_form{
-  margin: 5% 5%;
-}
+@media screen and (max-width: 293px){
+  #artForm article a{
+    width: 70%;
+    margin-left: 15%;
+    display: block;
+  }
 }

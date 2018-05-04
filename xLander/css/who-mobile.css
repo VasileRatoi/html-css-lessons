@@ -9,7 +9,6 @@ a{
   color: #333;
 }
 #who{
-  /* background-color: pink; */
   width: 90%;
   margin-left: 5%;
   margin-right: 5%;
@@ -36,20 +35,17 @@ a{
   font-weight: 300;
   font-size: 25px;
 }
-.col-left{
-  width: 60%;
-}
-.col-right{
-  width: 40%;
-}
 .col-right img{
   transition: 0.5s;
   animation: aperimg 1s;
 }
+.col-right{
+  text-align: center;
+}
 .col-left, .col-right{
-  display: inline-block;
-  vertical-align: top;
+  display: block;
   margin: 0;
+  width: 100%;
 }
 .tab{
   display: none;
@@ -57,16 +53,16 @@ a{
 .tab a{
   background-color: #f7d427;
   border-radius: 5px;
-  padding: 10px 10px;
+  padding: 10px 20px;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   border: 0;
   color: #444;
   font-size: 14px;
   font-weight: 700;
-  display: block;
+  display: inline-block;
   width: 110px;
-  transition: .5s;
   animation: bounce 1s;
+  transition: .5s;
   text-align: center;
 }
 .tab a:hover{
@@ -77,21 +73,17 @@ a{
 .selected{
   display: block;
 }
-.selected a{
-  display: inline-block;
-}
 .col-left p{
+  width: 100%;
   font-size: 16px;
-  width: 80%;
   line-height: 28px;
   font-weight: 200;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
-.col-left div:first-child, .col-left div:nth-child(2) div:last-child{
+.col-left div:first-child{
   font-size: 22px;
   width: 100%;
   margin-bottom: 10px;
-  padding-left: 20%;
 }
 .col-left div:first-child a:first-child{
   color: #FFC401;
@@ -100,10 +92,9 @@ a{
   border-right: 1px solid #444;
 }
 .subjects a{
-  text-align: center;
-  transition: .5s;
   display: inline-block;
   animation: bounce 1s;
+  transition: .5s;
 }
 .subjects a:hover{
   color: #FFC401;

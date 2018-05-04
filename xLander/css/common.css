@@ -11,7 +11,6 @@ a{
 nav a{
   color: #fff;
 }
-
 nav div:first-child small{
   color: yellow;
 }
@@ -26,4 +25,3 @@ nav div:last-child{
 }
 nav div:last-child a:hover{
   color: yellow;
-}
