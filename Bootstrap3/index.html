@@ -6,9 +6,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body style="background-color: #000;">
   <div class="container">
-
     <div id="photo-carousel" class="carousel slide" data-ride="carousel">
 
       <!-- container for slides / start -->
@@ -25,7 +24,13 @@
         <a class="carousel-control right" href="#photo-carousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
       </div>
       <!-- container for controls / end -->
-
+      <!-- container for indicators / start -->
+      <ol class="carousel-indicators">
+        <li data-target="#photo-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#photo-carousel" data-slide-to="1"></li>
+        <li data-target="#photo-carousel" data-slide-to="2"></li>
+      </ol>
+      <!-- container for indicators / end -->
     </div>
 
   </div>

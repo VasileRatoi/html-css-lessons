@@ -2,3 +2,10 @@ img{
   width: 100%;
   height: auto;
 }
+.carousel-indicators{
+  width: 70%;
+  text-align: right;
+}
+.carousel-indicators li{
+  border-radius: 0;
+}
